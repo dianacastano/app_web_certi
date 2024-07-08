@@ -1,2 +1,2 @@
 POST
-Valor de $action: actualizarPago
+Valor de $action: actualizarDetalle

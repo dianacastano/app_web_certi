@@ -17,7 +17,8 @@ $detalles = listar_detalles();
 
 <body class="bg-body-secondary lead">
     <div class="container">
-        <div class="card" style="margin-top: 150px; width: auto; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+    <div class="card p-5 position-absolute top-50 start-50 translate-middle" style="background-color: rgba(000, 000, 000, 0.3);box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+        
             <h2 class="text-center lead" style="font-size: xx-large;"><strong>Listado de Detalles de Factura</strong></h2>
             <table class="bg-dark-subtle table table-striped">
                 <thead>

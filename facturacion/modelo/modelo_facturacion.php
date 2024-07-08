@@ -74,8 +74,8 @@ function listar_detalles() {
 
 function actualizar_detalle($id_detalle, $id_factura, $id_producto, $cantidad, $precio_unitario, $total) {
     $pdo = conectarBD();
-    $stmt = $pdo->prepare("UPDATE detalles_factura SET id_detalle = ?, id_factura = ?, id-producto = ?, cantidad= ?, precio_unitario = ?, total = ? WHERE id_detalle = ?");
-    $stmt->execute([$id_detalle, $id_factura, $id_producto, $cantidad, $precio_unitario, $total]);
+    $stmt = $pdo->prepare("UPDATE detalles_factura SET id_detalle = ?, id_factura = ?, id_producto = ?, cantidad= ?, precio_unitario = ?, total = ? WHERE id_detalle = ?");
+    $stmt->execute([$id_detalle, $id_factura, $id_producto, $cantidad, $precio_unitario, $total, $id_detalle]);
 }
 
 function consultar_detalle_por_id($id_detalle) {
@@ -94,10 +94,10 @@ function consultar_detalle_por_id($id_detalle) {
 
 // funciones de Pagos
 
-function agregar_pago($id_factura, $importe, $fecha_pago, $metodo_pago ) {
+function agregar_pago($id_factura,  $fecha_pago, $importe, $metodo_pago ) {
     $pdo = conectarBD();
-    $stmt = $pdo->prepare("INSERT INTO Pagos (id_factura, importe, fecha_pago, metodo_pago) VALUES (?, ?, ?, ?)");
-    $stmt->execute([$id_factura, $importe, $fecha_pago, $metodo_pago]);
+    $stmt = $pdo->prepare("INSERT INTO Pagos (id_factura, fecha_pago, importe,  metodo_pago) VALUES (?, ?, ?, ?)");
+    $stmt->execute([$id_factura,  $fecha_pago, $importe, $metodo_pago]);
     return $pdo->lastInsertId();
 }
 

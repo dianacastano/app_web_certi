@@ -7,41 +7,11 @@
     <title>Actualizar Factura</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        body {
-            background-image: url('../vistas/img/imagen6.jpg');
-            background-size: cover;
-            background-position: center;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-        }
-
-        .card {
-            background-color: rgba(255, 255, 255, 0.9);
-            border: 1px solid #ccc;
-            padding: 20px;
-            max-width: 500px;
-            width: 100%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .form-group label {
-            font-weight: bold;
-        }
-
-        .btn-container {
-            display: flex;
-            justify-content: space-between;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="container d-flex justify-content-center align-items-center ">
-        <div class="card p-4">
+    
+<div class="card p-5 position-absolute top-50 start-50 translate-middle" style="background-color: rgba(000, 000, 000, 0.3);box-shadow: 0 0 10px rgba(0,0,0,0.3);">
             <h2 class="text-center mb-4">Modificar Detalle</h2>
 
             <?php
@@ -114,7 +84,7 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="total">Total:</label>
-                                <input type="text" class="form-control" id="total" name="total" value="<?php echo $total; ?>"> 
+                                <input type="number" class="form-control" id="total" name="total" value="<?php echo $total; ?>"> 
                             </div>
                         </div><br>
                         <div class="text-center">
@@ -147,7 +117,7 @@
         </a>
             </div>
         </div>
-    </div>
+    
 </body>
 
 </html>

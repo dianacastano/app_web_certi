@@ -30,8 +30,8 @@ require_once FACTURAS_MODEL_PATH . '/modelo_facturacion.php';
 <body class="bg-body-secondary">
     <!--Botones Facturas-->
   <div class="container position-relative">
-    <div class="card p-5 position-absolute top-50 start-0 translate-middle-y" style="background-color: rgba(255, 255, 255, 0.6);">
-      <h2 class="text-center mb-4">Facturación</h2>
+  <div class="card p-5 position-absolute top-50 start-0 translate-middle-y" style="background-color: rgba(000, 000, 000, 0.6);box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+  <h2 class="text-center mb-4 text-white lead" style="font-size: xx-large;"><strong> Facturación </strong></h2>
       <a href="vista/agregar_factura_vista.php" class="btn btn-success btn-sm btn-block">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
@@ -47,7 +47,7 @@ require_once FACTURAS_MODEL_PATH . '/modelo_facturacion.php';
         Eliminar Facturas
       </a>
       <br>
-      <a href="vista/editar_factura_vista.php" class="btn btn-warning btn-sm btn-block">
+      <a href="vista/editar_factura_vista.php" class="btn btn-warning btn-sm btn-block text-white">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
           <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9" />
           <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z" />
@@ -73,8 +73,8 @@ require_once FACTURAS_MODEL_PATH . '/modelo_facturacion.php';
 
     <!-- Botones Detalles -->
 
-    <div class="card p-5 position-absolute top-50 end-0 translate-middle-y" style="background-color: rgba(255, 255, 255, 0.6);">
-      <h2 class="text-center mb-4">Detalle <br> Facturación</h2>
+    <div class="card p-5 position-absolute top-50 end-0 translate-middle-y" style="background-color: rgba(000, 000, 000, 0.6);box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+    <h2 class="text-center mb-4 text-white lead" style="font-size: xx-large;"><strong> Detalle <br> Facturación </strong></h2>
       <a href="vista/agregar_detalle_vista.php" class="btn btn-success btn-sm btn-block">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
@@ -88,7 +88,7 @@ require_once FACTURAS_MODEL_PATH . '/modelo_facturacion.php';
         </svg> Eliminar Detalle Facturas
       </a>
       <br>
-      <a href="vista/editar_detalle_vista.php" class="btn btn-warning btn-sm btn-block">
+      <a href="vista/editar_detalle_vista.php" class="btn btn-warning btn-sm btn-block text-white">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
           <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9" />
           <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z" />
@@ -106,8 +106,8 @@ require_once FACTURAS_MODEL_PATH . '/modelo_facturacion.php';
 
     <!-- Botones Pagos -->
 
-    <div class="card p-5 position-absolute top-100 start-50 translate-middle" style="background-color: rgba(255, 255, 255, 0.6);margin-top:300px;">
-      <h2 class="text-center mb-4">Pagos</h2>
+    <div class="card p-5 position-absolute top-100 start-50 translate-middle" style="background-color: rgba(000, 000, 000, 0.6);box-shadow: 0 0 10px rgba(0,0,0,0.3);margin-top:300px;">
+    <h2 class="text-center mb-4 text-white lead" style="font-size: xx-large;"><strong> Pagos </strong></h2>
       <a href="vista/agregar_pago_vista.php" class="btn btn-success btn-sm btn-block">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
@@ -121,7 +121,7 @@ require_once FACTURAS_MODEL_PATH . '/modelo_facturacion.php';
         </svg> Eliminar Pago
       </a>
       <br>
-      <a href="vista/editar_pago_vista.php" class="btn btn-warning btn-sm btn-block">
+      <a href="vista/editar_pago_vista.php" class="btn btn-warning btn-sm btn-block text-white">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
           <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9" />
           <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z" />

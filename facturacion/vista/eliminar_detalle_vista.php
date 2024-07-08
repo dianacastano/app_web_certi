@@ -6,41 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Usuarios</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        body {
-            background-image: url('../vistas/img/imagen1.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-        }
-
-        .card {
-            background-color: rgba(255, 255, 255, 0.8);
-            border: 1px solid #ccc;
-            padding: 20px;
-            max-width: 500px;
-            width: 100%;
-        }
-
-        .form-group label {
-            font-weight: bold;
-        }
-
-        .btn-container {
-            display: flex;
-            justify-content: space-between;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="container d-flex justify-content-center align-items-center vh-100">
-        <div class="card p-4">
-            <h2 class="text-center mb-4">Eliminar Detalle</h2>
+    
+<div class="card p-5 position-absolute top-50 start-50 translate-middle" style="background-color: rgba(000, 000, 000, 0.3);box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+<h2 class="text-center lead" style="border-radius:5px; font-size:xx-large"><strong> Eliminar Detalle </strong></h2>
             <form method="POST" action="../controlador/controlador_facturacion.php">
                 <input type="hidden" name="action" value="eliminarDetalle">
                 <div class="form-group">
@@ -63,7 +34,7 @@
                 </div>
             </form>
         </div>
-    </div>
+    
 </body>
 
 </html>
